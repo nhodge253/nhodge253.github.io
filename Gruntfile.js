@@ -15,7 +15,8 @@ module.exports = function (grunt) {
 
   // Automatically load required grunt tasks
   require('jit-grunt')(grunt, {
-    useminPrepare: 'grunt-usemin'
+    useminPrepare: 'grunt-usemin',
+     buildcontrol: 'grunt-build-control'
   });
 
   // Configurable paths
@@ -30,6 +31,20 @@ module.exports = function (grunt) {
     // Project settings
     config: config,
 
+    buildcontrol: {
+     options: {
+       dir: 'dist',
+       commit: true,
+       push: true,
+       message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+     },
+     pages: {
+       options: {
+         remote: 'git@github.com:nhodge253/nhodge253.github.io',
+         branch: 'gh-pages'
+       }
+     }
+   },
     // Watches files for changes and runs tasks based on the changed files
     watch: {
       bower: {
