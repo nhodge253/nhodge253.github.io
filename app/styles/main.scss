@@ -3,6 +3,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
+@import url('https://fonts.googleapis.com/css?family=Lobster|Abril+Fatface');
 
 .browsehappy {
   margin: 0.2em 0;
@@ -15,7 +16,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 body {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: rgba(92, 210, 4, 0.16);
+  background-color: rgb(210, 3, 3);
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -90,5 +91,15 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+  }
+  h2 {
+    font-family: 'Abril Fatface', cursive;
+    color: rgb(228, 217, 216);
+  }
+  .footer p{
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 20px;
   }
 }
