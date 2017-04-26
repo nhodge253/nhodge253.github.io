@@ -3,7 +3,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
-@import url('https://fonts.googleapis.com/css?family=Lobster|Abril+Fatface');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Abril+Fatface|Libre+Baskerville|Reenie+Beanie|Lateef|');
 
 .browsehappy {
   margin: 0.2em 0;
@@ -40,6 +40,18 @@ body {
   }
 }
 
+.navbar {
+  font-family:'Lateef', cursive;
+  font-size: 1.75em;
+  border: none;
+  background-color: black;
+}
+
+.dropdown li {
+  font-family: 'Lateef', cursive;
+  font-size: 1.5em;
+}
+
 /* Custom page footer */
 .footer {
   padding-top: 19px;
@@ -55,10 +67,31 @@ body {
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
+  background-color: black;
+  background-image: url("/images/crimson.jpg");
+  background-position: top;
   .btn {
     font-size: 21px;
     padding: 14px 24px;
   }
+}
+
+.jumbotron h1 {
+  font-family: 'Libre Baskerville', serif;
+  color: rgb(228, 217, 216);
+}
+
+.jumbotron p {
+  font-family: 'Lateef', cursive;
+  font-size: 2.25em;
+  color: rgb(228, 217, 216);
+}
+
+.col-md-4 p {
+  font-family: 'Lateef', cursive;
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
 }
 
 /* Supporting marketing content */
@@ -95,9 +128,11 @@ body {
   h2 {
     font-family: 'Abril Fatface', cursive;
     color: rgb(228, 217, 216);
+    text-align: center;
   }
   .footer p{
-    font-family: 'Lobster', cursive;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 1.5em;
     font-weight: bold;
     text-align: right;
     margin-right: 20px;
