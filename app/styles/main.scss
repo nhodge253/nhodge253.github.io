@@ -3,7 +3,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
-@import url('https://fonts.googleapis.com/css?family=Lobster|Abril+Fatface|Libre+Baskerville|Reenie+Beanie|Lateef|');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Abril+Fatface|Libre+Baskerville|Reenie+Beanie|Lateef|David+Libre|');
 
 .browsehappy {
   margin: 0.2em 0;
@@ -98,6 +98,21 @@ body {
 /*Hides .details paragraphs*/
 p.details {
   display: none;
+  font-family: 'David Libre', serif;
+}
+
+a.view-details {
+  background-color: black;
+  font-size: .8467778em;
+  color: rgb(228, 217, 216);
+}
+
+a.visit-site {
+  font-family: 'Lateef', cursive;
+  font-size: .85em;
+  background-color: black;
+  color: rgb(228, 217, 216);
+  border-radius: 50%;
 }
 /* Supporting marketing content */
 .marketing {

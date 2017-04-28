@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-  //lines 22-24 picks and shows the details by using parent and child element.
+
   $(".view-details").click(function(event){ //selects the view details click throughouth the page and then sets a function that happens when the view details buttons are clicked.
   var targetElement = event.target;
   var childDetails = $(targetElement).parent().parent().children(".details");// created variable childDetails to simplify next code.  This variable defines each individual details elements with the parent parent children command.
