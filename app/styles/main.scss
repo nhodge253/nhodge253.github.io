@@ -78,6 +78,14 @@ ul.dropdown-menu li a:hover{
   font-family: 'Lateef', cursive;
   background-color: rgb(210, 3, 3);
 }
+.nav > li > a > img:hover {
+opacity: 0.5;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+      -webkit-transform: rotateZ(-30deg);
+        -ms-transform: rotateZ(-30deg);
+        transform: rotateZ(-30deg);
+     transition-duration: 1s;
+   }
 
 /* Custom page footer */
 .footer {
@@ -129,7 +137,7 @@ p.details {
 }
 
 a.view-details {
-  font-family: 'Abril Fatface', serif;
+  font-family: 'David Libre', serif;
   background-color: black;
   font-size: .8467778em;
   color: rgb(228, 217, 216);
