@@ -1,9 +1,17 @@
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
-
+//Remember: When importing stylesheets in SASS, you do not include the underscore (_) or .scss filename extension.
+// Override Bootstrap variables
+@import "variables";
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
+// Site-specific styles
+// Add additional stylesheets below
+@import "transitions";
+@import "content";
 @import url('https://fonts.googleapis.com/css?family=Lobster|Abril+Fatface|Libre+Baskerville|Reenie+Beanie|Lateef|David+Libre|');
+
+
 
 .browsehappy {
   margin: 0.2em 0;
