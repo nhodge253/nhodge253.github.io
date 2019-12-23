@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+@import url("https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+body {
+  text-align: center;
+  background: #fcfafa;
+  color: #1f1d1d;
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  height: 100vh;
+  overflow: visible;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.container {
+  max-width: 100%;
+}
+
+.intro {
+  display: inline-block;
+  overflow: hidden;
+  white-space: normal;
+  font-family: "Be Vietnam", sans-serif;
+}
+
+.intro:first-of-type {
+  /* For increasing performance 
+                       ID/Class should've been used. 
+                       For a small demo 
+                       it's okaish for now */
+  animation: showup 5s infinite;
+}
+
+.intro ~ .intro {
+  width: 0px;
+  animation: reveal 5s infinite;
+  white-space: normal;
+}
+
+.intro ~ .intro span {
+  margin-left: -255px;
+  animation: slidein 5s infinite;
+  white-space: normal;
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes slidein {
+  0% {
+    margin-left: -800px;
+  }
+  20% {
+    margin-left: -800px;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 550px;
+  }
+  /*higher width adds indent between Hello and the rest.*/
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 550px;
+  }
+}
+/*Next two media screens below fix the intro from running off screen on small screens. */
+@media screen and (min-width: 480px) and (max-width: 500px) {
+  .intro ~ .intro {
+    font-size: 75%;
+  }
+
+  @keyframes slidein {
+    0% {
+      margin-left: -800px;
+    }
+    20% {
+      margin-left: -800px;
+    }
+    35% {
+      margin-left: 0px;
+    }
+    100% {
+      margin-left: -100px;
+    }
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 575px) {
+  .intro ~ .intro {
+    font-size: 75%;
+  }
+
+  @keyframes slidein {
+    0% {
+      margin-left: -800px;
+    }
+    20% {
+      margin-left: -800px;
+    }
+    35% {
+      margin-left: 0px;
+    }
+    100% {
+      margin-left: -70px;
+    }
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 700px) {
+  .intro ~ .intro {
+    font-size: 75%;
+  }
+
+  @keyframes slidein {
+    0% {
+      margin-left: -800px;
+    }
+    20% {
+      margin-left: -800px;
+    }
+    35% {
+      margin-left: 0px;
+    }
+    100% {
+      margin-left: -20px;
+    }
+  }
+}
+p {
+  font-size: 18px;
+  color: #1f1d1d;
+}
+
+.navbar {
+  background-position: center;
+  background: #4790de;
+  height: 300px;
+  width: 100%;
+  padding-bottom: 15px;
+  font-size: 20px;
+}
+
+#navtro h1 {
+  color: #16233f;
+}
+
+.logo-image {
+  width: 40%;
+  border-radius: 50%;
+  margin-top: 6px;
+}
+
+.details {
+  display: none;
+}
+
+img.workrow {
+  object-fit: cover;
+  width: 66%;
+  height: 66%;
+}
+
+.workingmore {
+  padding-bottom: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */
+h1, h2, h3, h4, h5, h6 {
+  color: #cf0909;
+  font-family: "Be Vietnam", sans-serif;
+}
+
+#notlong {
+  background: whitesmoke;
+}
+
+.nomarpad {
+  margin: 0;
+  padding: 0;
+}
+
+.fa {
+  color: black;
+  padding: 10px;
+}
+
+a.zoomcolor {
+  color: white;
+  /* First we need to help some browsers along for this to work.
+       Just because a vendor prefix is there, doesn't mean it will
+       work in a browser made by that vendor either, it's just for
+       future-proofing purposes I guess. */
+  -o-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -webkit-transition: 0.6s;
+  /* ...and now for the proper property */
+  transition: 0.6s;
+  font-size: 14.88px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.zoom {
+  transition: transform 0.2s;
+  /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.07);
+  transition: 0.3s;
+}
+
+a.zoomcolor:hover {
+  color: #c8032b;
+  background-color: #16233f;
+  font-weight: bold;
+  border-radius: 25%;
+  transform: scale(1.08);
+  transition: 0.4s;
+}
+
+a.nav-link {
+  color: white;
+}
+
+.aboutintro {
+  margin: 4% 0 4% 0;
+}
+
+#headshot {
+  border-radius: 15%;
+}
+
+a.nav-link.zoomcolor.active {
+  color: #16233f;
+  font-weight: bold;
+}
+a.nav-link.zoomcolor.active:hover {
+  color: #16233f;
+  font-weight: bold;
+  background-color: #4790de;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,33 @@
+{
+  "name": "2020portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio for Nate Hodge",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhodge253/nhodge253.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nhodge253/nhodge253.github.io/issues"
+  },
+  "homepage": "https://github.com/nhodge253/nhodge253.github.io#readme",
+  "devDependencies": {
+    "lite-server": "^2.2.2",
+    "node-sass": "^4.13.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0"
+  }
+}
