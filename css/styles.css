@@ -277,4 +277,24 @@ a.nav-link.zoomcolor.active:hover {
   background-color: #4790de;
 }
 
+.halfleft {
+  width: 50%;
+}
+.halfleft h1 {
+  font-size: 92px;
+  margin-top: 50px;
+  margin-bottom: 75px;
+  margin-left: 20px;
+  text-align: left;
+}
+.halfleft p {
+  text-align: left;
+  margin: 2.5px 0 0 20px;
+}
+
+.halfright {
+  width: 50%;
+  background-color: black;
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -315,3 +315,24 @@ a.nav-link.zoomcolor.active {
     background-color: #4790de;
   }
 }
+
+.halfleft {
+  width: 50%;
+  h1 {
+    font-size: 92px;
+    margin-top: 50px;
+    margin-bottom: 75px;
+    margin-left: 20px;
+    text-align: left;
+  }
+
+  p {
+    text-align: left;
+    margin: 2.5px 0 0 20px;
+  }
+}
+
+.halfright {
+  width: 50%;
+  background-color: black;
+}
