@@ -19,6 +19,10 @@ body {
   max-width: 100%;
 }
 
+#slidertro {
+  justify-content: flex-end;
+}
+
 .intro {
   display: inline-block;
   overflow: hidden;
@@ -84,7 +88,7 @@ body {
     width: 0px;
   }
   30% {
-    width: 550px;
+    width: 350px;
   }
   /*higher width adds indent between Hello and the rest.*/
   80% {
@@ -92,7 +96,7 @@ body {
   }
   100% {
     opacity: 0;
-    width: 550px;
+    width: 350px;
   }
 }
 /*Next two media screens below fix the intro from running off screen on small screens. */
@@ -115,6 +119,9 @@ body {
       margin-left: -100px;
     }
   }
+  #slidertro {
+    display: none;
+  }
 }
 @media screen and (min-width: 501px) and (max-width: 575px) {
   .intro ~ .intro {
@@ -135,12 +142,11 @@ body {
       margin-left: -70px;
     }
   }
+  #slidertro {
+    display: none;
+  }
 }
 @media screen and (min-width: 576px) and (max-width: 700px) {
-  .intro ~ .intro {
-    font-size: 75%;
-  }
-
   @keyframes slidein {
     0% {
       margin-left: -800px;
@@ -295,6 +301,12 @@ a.nav-link.zoomcolor.active:hover {
 .halfright {
   width: 50%;
   background-color: black;
+}
+
+canvas {
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
