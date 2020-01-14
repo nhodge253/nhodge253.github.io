@@ -5,7 +5,7 @@
 body {
   text-align: center;
   background: rgb(252, 250, 250);
-  color: rgb(31, 29, 29);
+  color: #002878;
   font-family: "lato", sans-serif;
   font-weight: 300;
   font-size: 32px;
@@ -22,6 +22,7 @@ body {
 
 #slidertro {
   justify-content: flex-end;
+  color: #002878;
 }
 
 .intro {
@@ -194,13 +195,11 @@ body {
 
 p {
   font-size: 18px;
-  color: rgb(31, 29, 29);
 }
 
 .navbar {
-  // background-image: url("../images/titanslogo.png");
   background-position: center;
-  background: #4790de;
+  background: white;
   height: 300px;
   width: 100%;
   padding-bottom: 15px;
@@ -208,11 +207,11 @@ p {
 }
 
 #navtro h1 {
-  color: #16233f;
+  color: #ffcc00;
 }
 
 .logo-image {
-  width: 40%;
+  width: 43%;
   // height: 266px;
   border-radius: 50%;
   // overflow: hidden;
@@ -244,7 +243,7 @@ img.workrow {
 }
 
 #{headings(1,6)} {
-  color: rgb(207, 9, 9);
+  color: #ffcc00;
   font-family: "Be Vietnam", sans-serif;
 }
 
@@ -295,7 +294,7 @@ a.zoomcolor {
 }
 
 a.zoomcolor:hover {
-  color: #c8032b;
+  color: white;
   background-color: #16233f;
   font-weight: bold;
   border-radius: 25%;
@@ -304,7 +303,8 @@ a.zoomcolor:hover {
 }
 
 a.nav-link {
-  color: white;
+  color: #ffcc00;
+  font-weight: bold;
 }
 
 .aboutintro {
@@ -322,7 +322,7 @@ a.nav-link.zoomcolor.active {
   &:hover {
     color: #16233f;
     font-weight: bold;
-    background-color: #4790de;
+    background-color: #ffcc00;
   }
 }
 
@@ -345,9 +345,6 @@ a.nav-link.zoomcolor.active {
 .halfright {
   width: 50%;
   background-color: black;
-}
-
-.scoreboard {
 }
 
 canvas {
