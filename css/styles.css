@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300");
 @import url("https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Chivo:300,300i,400,400i,700,700i,900,900i|Saira+Extra+Condensed:100,200,300,400,500,600,700,800|Saira:100,200,300,400,500,600,700,800");
 body {
   text-align: center;
   background: #fcfafa;
@@ -308,6 +309,120 @@ canvas {
   display: block;
   margin: 0;
   padding: 0;
+}
+
+/*timeline css */
+/* Import */
+/* Variables */
+/* Base */
+.timelineA p {
+  font-weight: 300;
+}
+
+.timelineA a {
+  color: #16233f;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  letter-spacing: 0.3em;
+  font-size: 0.6em;
+  font-weight: 400;
+  background: #252727;
+  padding: 0.3rem 1rem;
+  margin: 1.9rem 0 0 0;
+  float: right;
+}
+
+.timelineA a:hover {
+  color: #ffcc00;
+  background: #004ffc;
+  border-bottom: 0.35em solid black;
+}
+
+.timelineA strong {
+  font-weight: 600;
+}
+
+.timelineA h1 {
+  font-family: "Saira", sans-serif;
+  letter-spacing: 1.5px;
+  color: grey;
+  font-weight: 400;
+  font-size: 2.4em;
+}
+
+#timeline-content {
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* Timeline */
+.timeline {
+  border-left: 4px solid #004ffc;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  background: fade(#ffcc00, 3%);
+  color: fade(white, 80%);
+  font-family: "Chivo", sans-serif;
+  margin: 50px auto;
+  letter-spacing: 0.5px;
+  position: relative;
+  line-height: 1.4em;
+  font-size: 20px;
+  padding: 50px;
+  list-style: none;
+  text-align: left;
+  font-weight: 100;
+  max-width: 30%;
+}
+.timeline h1 {
+  font-family: "Saira", sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 100;
+  font-size: 1.4em;
+}
+.timeline h2,
+.timeline h3 {
+  font-family: "Saira", sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  font-size: 1.4em;
+}
+.timeline .event {
+  border-bottom: 1px dashed fade(#ffcc00, 10%);
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.timeline .event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+.timeline .event:before, .timeline .event:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+.timeline .event:before {
+  left: -217.5px;
+  color: fade(#ffcc00, 40%);
+  content: attr(data-date);
+  text-align: right;
+  font-weight: 100;
+  font-size: 0.9em;
+  min-width: 120px;
+  font-family: "Saira", sans-serif;
+}
+.timeline .event:after {
+  box-shadow: 0 0 0 4px fade(#004ffc, 100%);
+  left: -57.85px;
+  background: #313534;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+  top: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */
