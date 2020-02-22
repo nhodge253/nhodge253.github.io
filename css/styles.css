@@ -171,10 +171,10 @@ p {
 .navbar {
   background-position: center;
   background: white;
-  height: 300px;
   width: 100%;
   padding-bottom: 15px;
   font-size: 20px;
+  margin-bottom: 30px;
 }
 
 #navtro h1 {
@@ -182,9 +182,9 @@ p {
 }
 
 .logo-image {
-  width: 43%;
+  width: 29%;
   border-radius: 50%;
-  margin-top: 6px;
+  padding: 20px 0;
 }
 
 .details {
