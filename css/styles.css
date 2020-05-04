@@ -207,6 +207,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Be Vietnam", sans-serif;
 }
 
+.opener-intro {
+  padding: 0 100px 40px 100px;
+}
+
 #notlong {
   background: whitesmoke;
 }
