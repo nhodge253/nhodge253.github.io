@@ -21,7 +21,7 @@
   "homepage": "https://github.com/nhodge253/nhodge253.github.io#readme",
   "devDependencies": {
     "lite-server": "^2.2.2",
-    "node-sass": "^4.13.0"
+    "node-sass": "^7.0.0"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
